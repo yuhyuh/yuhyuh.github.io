@@ -1,0 +1,145 @@
+/* initialize */
+body {
+    margin: 0;
+}
+
+/* header-title */
+#header-title {
+    margin: 0px;
+    padding: 15px;
+    color: gray;
+    background-color: white;
+}
+
+/* header-menu */
+#header-menu {
+    background: #fff;
+    width: 100%;
+    box-shadow: 1px 1px 2px 2px #bbb;
+}
+#header-menu.m_fixed {
+    left: 0;
+    position: fixed;
+    top: 0;
+}
+#header-menu .inner {
+    padding-bottom: 0;
+    padding-top: 0;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+}
+#header-menu .list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#header-menu .item {
+    width: 50%;
+}
+#header-menu .item:last-child {
+    margin-right: 0;
+}
+#header-menu .item a {
+    color: gray;
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* contents */
+#contents {
+    background-color: #F2F2F2;
+}
+
+/* content */
+.content {
+    background-color: #fff;
+    margin:0 auto;
+    padding: 30px 50px;
+    box-shadow: 1px 1px 2px 2px #bbb;
+}
+@media screen and (min-width: 1024px) {
+    .content {
+        width: 810px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .content {
+        width: 75%;
+    }
+}
+.title {
+    color: gray;
+    text-align: center;
+}
+.content::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* profile */
+#profile .image{
+    text-align: center;
+    width: 40%;
+    padding: 10px 0px;
+}
+@media screen and (min-width: 800px) {
+    #profile .image {
+        float: left;
+        margin: 0px;
+    }
+    #profile img {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 800px) {
+    #profile .image {
+        float: none;
+        margin: auto;
+    }
+    #profile img {
+        width: 85%;
+    }
+}
+
+/* footer */
+#footer {
+    margin: 0px;
+    padding: 15px;
+    background-color: gray;
+    color: white;
+    box-shadow: 1px 1px 2px 2px #bbb;
+    text-align: center;
+}
+
+/* ---------------------------------------------------- */
+#works .card {
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding: 0px;
+}
+@media screen and (min-width: 800px) {
+    #works .card {
+        float: left;
+        margin: 0px 0px 20px 0px;
+        width: 50%;
+    }
+    #works img {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 800px) {
+    #works .card {
+        float: none;
+        margin: 0px auto 20px auto;
+        width: 100%;
+    }
+    #works img {
+        width: 80%;
+    }
+}
