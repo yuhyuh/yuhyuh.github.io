@@ -58,7 +58,7 @@ body {
 .content {
     background-color: #fff;
     margin:0 auto;
-    padding: 30px 50px;
+    padding: 30px 40px;
     box-shadow: 1px 1px 2px 2px #bbb;
 }
 @media screen and (min-width: 1024px) {
@@ -107,7 +107,7 @@ body {
         margin: auto;
     }
     #profile img {
-        width: 85%;
+        width: 100%;
     }
 }
 
