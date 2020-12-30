@@ -3,45 +3,45 @@ body {
     margin: 0;
 }
 
-/* header-title */
-#header-title {
+/* page-title */
+#page-title {
     margin: 0px;
     padding: 15px;
     color: gray;
     background-color: white;
 }
 
-/* header-menu */
-#header-menu {
+/* menu */
+#menu {
     background: #fff;
     width: 100%;
     box-shadow: 1px 1px 2px 2px #bbb;
 }
-#header-menu.m_fixed {
+.menu_fixed {
     left: 0;
     position: fixed;
     top: 0;
 }
-#header-menu .inner {
+.menu-inner {
     padding-bottom: 0;
     padding-top: 0;
     margin: 0 auto;
     max-width: 100%;
     width: 100%;
 }
-#header-menu .list {
+.menu-list {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
 }
-#header-menu .item {
+.menu-item {
     width: 50%;
 }
-#header-menu .item:last-child {
+.menu-item:last-child {
     margin-right: 0;
 }
-#header-menu .item a {
+.menu-item a {
     color: gray;
     display: block;
     line-height: 50px;
@@ -73,12 +73,13 @@ body {
 }
 @media screen and (max-width: 800px) {
     .content {
-        width: 70%;
+        width: 73%;
     }
 }
 .title {
     color: gray;
     text-align: center;
+    margin: 0px 0px 20px 0px;
 }
 .content::after {
     content: "";
@@ -87,13 +88,13 @@ body {
 }
 
 /* profile */
-#profile .image{
+.profile-image{
     text-align: center;
     width: 40%;
     padding: 10px 0px;
 }
 @media screen and (min-width: 800px) {
-    #profile .image {
+    .profile-image {
         float: left;
         margin: 0px;
     }
@@ -102,12 +103,38 @@ body {
     }
 }
 @media screen and (max-width: 800px) {
-    #profile .image {
+    .profile-image {
         float: none;
         margin: auto;
     }
     #profile img {
         width: 100%;
+    }
+}
+
+/* works */
+.work-card {
+    text-align: center;
+    padding: 0px;
+}
+@media screen and (min-width: 800px) {
+    .work-card {
+        float: left;
+        margin: 0px 0px 20px 0px;
+        width: 50%;
+    }
+    #works img {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .work-card {
+        float: none;
+        margin: 0px auto 20px auto;
+        width: 100%;
+    }
+    #works img {
+        width: 80%;
     }
 }
 
@@ -122,29 +149,48 @@ body {
 }
 
 /* ---------------------------------------------------- */
-#works .card {
-    width: 50%;
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+}
+.modal-bg {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+.modal-content {
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    box-shadow: 1px 1px 2px 2px #bbb;
+}
+.modal-image {
     float: left;
-    text-align: center;
-    padding: 0px;
 }
 @media screen and (min-width: 800px) {
-    #works .card {
+    .modal-image {
         float: left;
-        margin: 0px 0px 20px 0px;
-        width: 50%;
+        margin: 0px;
+        width: 60%
     }
-    #works img {
-        width: 80%;
+    .modal img {
+        width: 90%;
     }
 }
 @media screen and (max-width: 800px) {
-    #works .card {
+    .modal-image {
         float: none;
-        margin: 0px auto 20px auto;
-        width: 100%;
+        margin: auto;
+        width: 100%
     }
-    #works img {
-        width: 80%;
+    .modal img {
+        width: 100%;
     }
 }

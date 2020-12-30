@@ -9,36 +9,65 @@
     <title>yuhyuh Portfolio</title>
 </head>
 <body>
-    <h2 id="header-title">PORTFOLIO PAGE</h2>
-    <nav id="header-menu">
-        <div class="inner">
-            <ul class="list">
-                <li class="item"><b><a href="#section1">PROFILE</a></b></li>
-                <li class="item"><b><a href="#section2">SKILL</a></b></li>
-                <li class="item"><b><a href="#section3">WORKS</a></b></li>
+    <h2 id="page-title">PORTFOLIO PAGE</h2>
+    <nav id="menu">
+        <div class="menu-inner">
+            <ul class="menu-list">
+                <li class="menu-item"><b><a href="#section1">PROFILE</a></b></li>
+                <li class="menu-item"><b><a href="#section2">SKILL</a></b></li>
+                <li class="menu-item"><b><a href="#section3">WORKS</a></b></li>
             </ul>
         </div>
     </nav>
     <div id="contents"><br>
         <div id="profile" class="content">
             <h2 class="title">PROFILE</h2>
-            <div class="image"><img src="./img/profile.png"></div>
-            <div class="">こんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちは</div>
+            <div class="profile-image"><img src="./img/profile.png"></div>
+            <div>
+                <span>こんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちはこんにちは</span>
+            </div>
         </div><br>
         <div id="skill" class="content">
             <h2 class="title">SKILL</h2>
         </div><br>
         <div id="works" class="content">
             <h2 class="title">WORKS</h2>
-            <div class="card">
-                <div class="image"><img src="./img/card1.png"></div>
-                <div class="note">webサイト</div>
+            <div class="work-card">
+                <div class="work-image">
+                    <a class="modal-open" data-target="card1" href=""><img src="./img/card1.png"></a>
+                </div>
+                <span>ウェブサイト</span>
             </div>
-            <div class="card">
-                <div class="image"><img src="./img/card1.png"></div>
-                <div class="note">デスクトップアプリ</div>
+            <div class="work-card">
+                <div class="work-image">
+                    <a class="modal-open" data-target="card2" href=""><img src="./img/card1.png"></a>
+                </div>
+                <span>デスクトップアプリ</span>
             </div>
         </div><br>
+
+        <!-- モーダルウィンドウ -->
+        <div id="card1" class="modal">
+            <div class="modal-bg modal-close"></div>
+            <div class="modal-content content">
+                <h2 class="title">ウェブサイト</h2>
+                <div class="modal-image"><img src="./img/card1.png"></div>
+                <div class="modal-note">
+                    <span>説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文</span>
+                </div>
+            </div>
+        </div>
+        <div id="card2" class="modal">
+            <div class="modal-bg modal-close"></div>
+            <div class="modal-content content">
+                <h2 class="title">デスクトップアプリ</h2>
+                <div class="modal-image"><img src="./img/card1.png"></div>
+                <div class="modal-note">
+                    <span>説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文</span>
+                </div>
+            </div>
+        </div>
+
     </div>
     <div id="footer"><span>footer</span></div>
 </body>
