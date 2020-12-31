@@ -6,7 +6,7 @@ body {
 /* page-title */
 #page-title {
     margin: 0px;
-    padding: 16px;
+    padding: 11px 16px;
     color: gray;
     background-color: white;
     float: left;
@@ -237,19 +237,19 @@ body {
 }
 
 #header {
-    height: 70px;
+    height: 64px;
     padding: 9px 0px 0px 0px;
 }
 #DarkModeSwitcher {
     display:block;
-    width:56px;
-    height:56px;
+    width:52px;
+    height:52px;
     margin:0px 20px 0px auto;
-    line-height:56px;
+    line-height:52px;
     background-color: #575757;
     border-radius:100%;
     color:#fff;
-    font-size:10px;
+    font-size:8px;
     font-weight:bold;
     text-decoration:none;
     text-align:center;
