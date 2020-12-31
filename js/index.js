@@ -39,7 +39,7 @@ $(document).ready(function() {
         var modal = document.getElementById(target);
 
         // モーダルウィンドウopen
-        $(this).on('click',function() {
+        $(this).on('click', function() {
             $(modal).fadeIn();
             return false;
         });
@@ -56,8 +56,12 @@ $(document).ready(function() {
     });
 
     // モーダルウィンドウclose
-    $('.modal-close').on('click',function() {
+    $('.modal-close').on('click', function() {
         $('.modal').fadeOut();
         return false;
+    });
+
+    $('#DarkModeSwitcher').on('click', function() {
+        $('body').toggleClass('Dark-Mode');
     });
 });
