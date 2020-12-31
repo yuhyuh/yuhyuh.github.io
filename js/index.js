@@ -63,5 +63,10 @@ $(document).ready(function() {
 
     $('#DarkModeSwitcher').on('click', function() {
         $('body').toggleClass('Dark-Mode');
+        if($('body').hasClass('Dark-Mode')) {
+            $(this)[0].text = "LIGHT";
+        } else {
+            $(this)[0].text = "DARK";
+        }
     });
 });
