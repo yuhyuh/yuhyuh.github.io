@@ -125,21 +125,27 @@ body {
 }
 .skill-image {
     display:inline-block;
-    width:100px;
     text-align: center;
 }
 .skill-image img {
-    width: 100px;
     margin: 0px auto;
 }
 @media screen and (min-width: 800px) {
     .skill-image {
+        width:115px;
         margin: 0px 40px;
+    }
+    .skill-image img {
+        width:115px;
     }
 }
 @media screen and (max-width: 800px) {
     .skill-image {
-        margin: 0px 24px;
+        width:95px;
+        margin: 0px 26px;
+    }
+    .skill-image img {
+        width:95px;
     }
 }
 
