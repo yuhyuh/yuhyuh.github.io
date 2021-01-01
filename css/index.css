@@ -119,6 +119,30 @@ body {
     }
 }
 
+/* skill */
+.skill-group {
+    text-align:center;
+}
+.skill-image {
+    display:inline-block;
+    width:100px;
+    text-align: center;
+}
+.skill-image img {
+    width: 100px;
+    margin: 0px auto;
+}
+@media screen and (min-width: 800px) {
+    .skill-image {
+        margin: 0px 40px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .skill-image {
+        margin: 0px 32px;
+    }
+}
+
 /* works */
 .work-card {
     text-align: center;
@@ -154,7 +178,7 @@ body {
     text-align: center;
 }
 
-/* ---------------------------------------------------- */
+/* modal */
 .modal {
     display: none;
     position: fixed;
