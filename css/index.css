@@ -150,7 +150,7 @@ body {
 @media screen and (max-width: 800px) {
     .skill-image {
         width:80px;
-        margin: 0px 28px;
+        margin: 0px 25px;
     }
     .skill-image img {
         width:80px;
