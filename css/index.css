@@ -130,9 +130,13 @@ body {
 .skill-image img {
     margin: 0px auto;
 }
-.skill-image span {
+.skill-name {
+    font-weight: bold;
+}
+.skill-years {
     display:block;
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 30px 0px;
+    font-size: 11px;
 }
 @media screen and (min-width: 800px) {
     .skill-image {
