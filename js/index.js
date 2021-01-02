@@ -47,7 +47,7 @@ $(document).ready(function() {
         $(this).find('img').css('opacity', 0.5);
         $(this).find('img').hover(
             function() {
-                $(this).fadeTo(fadeTime, 0.85);
+                $(this).fadeTo(fadeTime, 0.9);
             },
             function() {
                 $(this).fadeTo(fadeTime, 0.5);
@@ -69,4 +69,21 @@ $(document).ready(function() {
             $(this)[0].text = "DARK";
         }
     });
+
+    var pagetop = $('#page_top');   
+    pagetop.hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 74) {
+            pagetop.fadeIn();
+        } else {
+            pagetop.fadeOut();
+        }
+    });
+    pagetop.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 400, 'swing');
+        return false;
+    });
+
 });
