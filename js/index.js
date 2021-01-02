@@ -47,7 +47,7 @@ $(document).ready(function() {
         $(this).find('img').css('opacity', 0.5);
         $(this).find('img').hover(
             function() {
-                $(this).fadeTo(fadeTime, 1);
+                $(this).fadeTo(fadeTime, 0.85);
             },
             function() {
                 $(this).fadeTo(fadeTime, 0.5);

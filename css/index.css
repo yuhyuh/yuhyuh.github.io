@@ -236,6 +236,9 @@ body {
 .modal-image {
     float: left;
 }
+.modal img {
+    opacity: 0.85;
+}
 @media screen and (min-width: 800px) {
     .modal-image {
         float: left;
