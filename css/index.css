@@ -122,12 +122,12 @@ body {
 /* skill */
 .skill-group {
     text-align:center;
-    border-bottom: solid 2px  #d8d8d8;
+    border-bottom: solid 2px rgb(221, 221, 221);
     padding: 0px 0px 6px 0px;
     margin: 0px 0px 32px 0px;
 }
 .skill-group:last-child {
-    border-bottom: solid 0px  #F2F2F2;
+    border-bottom: 0px;
     padding: 0px;
     margin: 0px;
 }
@@ -137,16 +137,14 @@ body {
 }
 .skill-image img {
     margin: 0px auto;
-}
-.skill-name {
-    font-weight: bold;
+    opacity: 0.5;
 }
 .skill-years {
     display:block;
     margin: 0px 0px 20px 0px;
     font-size: 11px;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 720px) {
     .skill-image {
         width:115px;
         margin: 0px 40px;
@@ -155,7 +153,16 @@ body {
         width:115px;
     }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 720px) {
+    .skill-image {
+        width:100px;
+        margin: 0px 32px;
+    }
+    .skill-image img {
+        width:100px;
+    }
+}
+@media screen and (max-width: 600px) {
     .skill-image {
         width:80px;
         margin: 0px 24px;
@@ -251,9 +258,9 @@ body {
 }
 
 /* darkmode */
-#header, #page-title, #menu, #contents, .content, #footer {
-    -webkit-transition: all .3s linear 0s;
-    transition: all .3s linear 0s;
+#header, #page-title, #menu, span, #contents, .content, .skill-group, #footer {
+    -webkit-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
 }
 .Dark-Mode #header {
     background-color: #2c2c2c;
@@ -278,6 +285,12 @@ body {
 .Dark-Mode .content {
     background-color: #2c2c2c;
     box-shadow: 1px 1px 2px 2px rgb(83, 83, 83)
+}
+.Dark-Mode .skill-group {
+    border-bottom: solid 2px rgb(58, 58, 58)
+}
+.Dark-Mode .skill-group:last-child {
+    border-bottom: solid 0px rgb(83, 83, 83)
 }
 .Dark-Mode #footer {
     background-color: gray;

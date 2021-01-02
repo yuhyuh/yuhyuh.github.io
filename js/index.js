@@ -44,13 +44,13 @@ $(document).ready(function() {
             return false;
         });
 
-        $(this).find('img').css('opacity', 0.6);
+        $(this).find('img').css('opacity', 0.5);
         $(this).find('img').hover(
             function() {
                 $(this).fadeTo(fadeTime, 1);
             },
             function() {
-                $(this).fadeTo(fadeTime, 0.6);
+                $(this).fadeTo(fadeTime, 0.5);
             }
         );
     });
